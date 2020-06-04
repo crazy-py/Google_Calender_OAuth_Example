@@ -35,13 +35,6 @@ class CalenderLogin extends Controller{
               }
 
   public function Serviceclient(){
-    /*
-    Sample Input To Get Access Token
-    $refreshToken = "1//0gKreAXgA4SvFCgYIARAAGBASNwF-L9IrsHgokvaU7Pxdl9F-mvILGMPcZ0gGnH2vaMiJvUJebF9BM48GTYDWyDQlThysiQnxXSE";
-    $client_id = "1003331218357-6n4t1dvf7bncbag0go9c18cjp88q1cte.apps.googleusercontent.com";
-    $client_secret = "KARxfZNqSrvz-0zyCPpYcOUo";
-    $dev_id = "AIzaSyC5IokJyHHjOYlOfVaf5p7_iXdGOhe-aNo";
-    */
     $client = new Google_Client();
     $client->setClientId($client_id);
     $client->setDeveloperKey($dev_id);
